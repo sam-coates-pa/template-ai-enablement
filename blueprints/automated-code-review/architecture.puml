@@ -1,0 +1,10 @@
+@startuml
+actor Developer
+participant "CI Pipeline" as CI
+participant "LLM Service" as LLM
+
+Developer -> CI: Submit PR
+CI -> LLM: Send code + prompt
+LLM -> CI: Review feedback
+CI -> Developer: Comment on PR
+@enduml
