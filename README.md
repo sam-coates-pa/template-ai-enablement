@@ -8,23 +8,62 @@ A full‑featured AI enablement template designed to accelerate responsible adop
 ```
 template-ai-enablement/
 ├── README.md
+├── .github/
+│   └── workflows/
+│       └── ai-checks.yml
+│
 ├── prompts/
-    ├── data-quality/
-    │   └── dq_prompt_template.md
-    │   ├── iac/
-    │   │   └── iac_prompt_template.md
-    │   ├── code-review/
-    │   │   └── code_review_prompt.md
-    │   └── documentation/
-    │       └── documentation_prompt.md
-    ├── assistants/
-    │   ├── gemini/
-    │   │   └── gemini-instructions.md
-    │   └── claude/
-    │       └── claude-code-guidance.md
-    └── docs/
-        ├── policy.md
-        └── best-practices.md
+│   ├── data-quality/
+│   │   └── dq_prompt_template.md
+│   ├── code-review/
+│   │   └── code_review_prompt.md
+│   ├── documentation/
+│   │   └── documentation_prompt.md
+│   └── iac/
+│       └── iac_prompt_template.md
+│
+├── assistants/
+│   ├── gemini/
+│   │   └── gemini-instructions.md
+│   └── claude/
+│       └── claude-code-guidance.md
+│
+├── use-cases/
+│   ├── requirements-generation/
+│   │   ├── use-case.md
+│   │   ├── prompts.md
+│   │   └── sample-io.md
+│   └── test-case-generation/
+│       └── use-case.md
+│
+├── playbooks/
+│   ├── ai-discovery-workshop.md
+│   └── prompt-engineering-session.md
+│
+├── blueprints/
+│   └── automated-code-review/
+│       ├── overview.md
+│       ├── architecture.puml
+│       └── implementation.md
+│
+├── llm-clients/
+│   └── python/
+│       └── openai_client.py
+│
+├── rag/
+│   └── rag_pipeline.py
+│
+├── templates/
+│   ├── use-case-template.md
+│   ├── prompt-template.md
+│   └── ai-feature-spec.md
+│
+├── evaluation/
+│   └── prompt-evaluation.md
+│
+└── docs/
+    ├── policy.md
+    └── best-practices.md
 
 ```
 
