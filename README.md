@@ -1,6 +1,27 @@
 # template-ai-enablement
 A full‑featured AI enablement template designed to accelerate responsible adoption across delivery teams, with ready‑made prompt patterns, Gemini and Claude Code assistant setups, and governance guardrails. Includes structured prompt libraries and policy‑led best practices.
 
+This repository provides a **practical toolkit** combining:
+- Standardised prompt engineering patterns  
+- Reusable use cases and playbooks  
+- Multi-model AI integration (Gemini, Claude, Copilot-style)  
+- Governance guardrails and best practices  
+- Starter architecture and implementation patterns  
+
+---
+
+##  Purpose
+
+This template is built to help teams move from:
+
+> ❌ Ad-hoc AI experimentation  
+> ✅ → Structured, repeatable AI delivery capability  
+
+It enables:
+- Faster onboarding onto AI-enabled projects  
+- Consistent quality of AI outputs  
+- Safe and compliant usage of AI tools  
+- Reuse of proven patterns across engagements  
 
 ---
 
@@ -68,17 +89,186 @@ template-ai-enablement/
 
 ```
 
+
+---
+
 ## What’s Included
-- Standardised prompt templates
-- Gemini and Claude Code assistant guidance
-- AI usage policies and best practices
 
-## How to Use
-1. Click **Use this template** in GitHub
-2. Clone your new repository
-3. Tailor prompts, assistants, and policies to your context
+### Prompt Library
+Structured prompts for common delivery activities:
+- Code review
+- Documentation generation
+- Data quality analysis
+- Infrastructure-as-Code validation  
 
+---
+
+### AI Assistants
+Pre-configured guidance for:
+- Google Gemini  
+- Anthropic Claude Code  
+
+Enables consistent usage across teams.
+
+---
+
+### Delivery Use Cases
+Ready-to-use AI applications:
+- Requirements generation  
+- Test case generation  
+
+Includes:
+- Problem definition  
+- Prompt patterns  
+- Sample inputs/outputs  
+- Risks and validation guidance  
+
+---
+
+### Playbooks
+Step-by-step guides for running:
+- AI discovery workshops  
+- Prompt engineering sessions  
+
+Helps teams **operationalise AI in projects**.
+
+---
+
+### Architecture Blueprints
+Reusable solution designs:
+- Automated code review pipeline  
+- AI-integrated delivery workflows  
+
+Includes diagrams and implementation guidance.
+
+---
+
+### LLM Clients
+Starter Python integrations for:
+- Azure OpenAI (Copilot-style)
+- Gemini
+- Claude  
+
+Designed for:
+- Consistency  
+- Extensibility  
+- Enterprise usage  
+
+---
+
+### RAG (Retrieval-Augmented Generation)
+Basic pipeline for:
+- Context-aware AI responses  
+- Document-driven querying  
+
+---
+
+### Governance & Best Practices
+
+Located in `/docs/`:
+- AI usage policy  
+- Responsible AI guidelines  
+- Best practices for safe adoption  
+
+---
+
+### Evaluation Frameworks
+
+Assess AI outputs using:
+- Accuracy  
+- Completeness  
+- Consistency  
+- Safety  
+
+---
+
+### CI/CD Guardrails
+
+GitHub Actions workflow (`ai-checks.yml`) ensures:
+- Prompt quality checks  
+- Markdown validation  
+- Python syntax validation  
+- Governance presence  
+
+---
+
+## Getting Started
+
+### 1. Create Your Repo
+
+Click **“Use this template”** in GitHub.
+
+---
+
+### 2. Clone Locally
+
+```bash
+git clone https://github.com/pa-int-data-engineering-de/template-ai-enablement
+cd template-ai-enablement
+```
+### 3. Tailor prompts, assistants, and policies to your context
+
+### 4. Configure Environment
+Copy the example file:
+```bash
+cp .env.example .env
+```
+
+Add your API keys:
+```bash
+# GeminiGOOGLE_API_KEY=
+
+# ClaudeANTHROPIC_API_KEY=
+
+# Azure OpenAI (Copilot-style)
+AZURE_OPENAI_API_KEY=
+AZURE_OPENAI_ENDPOINT=
+AZURE_OPENAI_DEPLOYMENT_NAME=
+```
+### 5. Start Using AI Clients
+Example:
+```bash
+cd llm-clients/pythonpython openai_client.py
+```
+
+### 6. Apply to Delivery
+
+Use /use-cases during backlog refinement
+Run /playbooks with stakeholders
+Apply /prompts in daily delivery
+Follow /docs/policy.md for safe usage
+
+
+##  How to Use This Repo in Projects
+###  During Discovery
+
+Run ai-discovery-workshop.md
+Identify high-value use cases
+
+
+###  During Design
+
+Use blueprints for architecture patterns
+Define AI-enabled features
+
+
+###  During Delivery
+
+Apply prompt templates
+Use LLM clients for integration
+Generate outputs (code, docs, tests)
+
+
+###  During Governance
+
+Enforce policy and best practices
+Validate outputs using evaluation frameworks
 ## Governance
-This repo is designed to support safe, compliant, and repeatable AI usage.
+This repository is designed to support:
+
+- Safe handling of sensitive data
+- Reduction of hallucinations
+- Human-in-the-loop validation
+- Compliance with enterprise standards
 See `ai-enablement/docs/policy.md` for guardrails.
 
