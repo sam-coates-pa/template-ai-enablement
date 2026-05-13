@@ -8,6 +8,7 @@ A full‑featured AI enablement template designed to accelerate responsible adop
 ```
 template-ai-enablement/
 ├── README.md
+├── .env.example
 ├── .github/
 │   └── workflows/
 │       └── ai-checks.yml
