@@ -233,44 +233,39 @@ cd llm-clients/pythonpython openai_client.py
 
 ### 6. Apply to Delivery
 
-Use /use-cases during backlog refinement
+- Use /use-cases during backlog refinement
+  
+- Run /playbooks with stakeholders
 
-Run /playbooks with stakeholders
-
-Apply /prompts in daily delivery
-
-Follow /docs/policy.md for safe usage
+- Apply /prompts in daily delivery
+  
+- Follow /docs/policy.md for safe usage
 
 
 ##  How to Use This Repo in Projects
 ###  During Discovery
 
-Run ai-discovery-workshop.md
-
-Identify high-value use cases
+- Run ai-discovery-workshop.md
+- Identify high-value use cases
 
 
 ###  During Design
 
-Use blueprints for architecture patterns
-
-Define AI-enabled features
+- Use blueprints for architecture patterns
+- Define AI-enabled features
 
 
 ###  During Delivery
 
-Apply prompt templates
-
-Use LLM clients for integration
-
-Generate outputs (code, docs, tests)
+- Apply prompt templates
+- Use LLM clients for integration
+- Generate outputs (code, docs, tests)
 
 
 ###  During Governance
 
-Enforce policy and best practices
-
-Validate outputs using evaluation frameworks
+- Enforce policy and best practices
+- Validate outputs using evaluation frameworks
 
 
 ## Governance
