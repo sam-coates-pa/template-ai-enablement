@@ -1,5 +1,5 @@
 # template-ai-enablement
-A full‑featured AI enablement template designed to accelerate responsible adoption across delivery teams, with ready‑made prompt patterns, Gemini and Claude Code assistant setups, and governance guardrails. Includes structured prompt libraries and policy‑led best practices.
+A full‑featured AI enablement template designed to accelerate responsible adoption across delivery teams, with ready‑made prompt patterns, Gemini, Claude Code & CoPilot assistant setups, and governance guardrails. Includes structured prompt libraries and policy‑led best practices.
 
 This repository provides a **practical toolkit** combining:
 - Standardised prompt engineering patterns  
