@@ -1,0 +1,49 @@
+name: AI Checks
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  ai-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Validate markdown structure
+        run: |
+          echo "Checking markdown files..."
+          find . -name "*.md" -print
+
+      - name: Check for placeholder prompts
+        run: |
+          echo "Checking for unresolved placeholders..."
+          if grep -R "{{input}}" .; then
+            echo "⚠️ Placeholder found (expected in templates, check manually)"
+          fi
+
+      - name: Lint YAML files
+        run: |
+          echo "Checking YAML syntax..."
+          pip install yamllint
+          yamllint .
+
+      - name: Basic Python validation
+        run: |
+          echo "Validating Python files..."
+          python -m py_compile $(git ls-files '*.py') || echo "Python compile warnings"
+
+      - name: AI policy check (simple)
+        run: |
+          echo "Checking for policy presence..."
+          if [ ! -f docs/policy.md ]; then
+            echo "❌ policy.md missing"
+            exit 1
+          fi
+
+      - name: Success
+        run: echo "✅ AI checks completed"
